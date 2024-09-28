@@ -2,7 +2,7 @@ import { Tweet } from "@prisma/client";
 import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { prismaClient } from "../../clients/db";
-import { GraphqlContext } from "../../intefaces";
+import { GraphqlContext } from "../../interfaces";
 import UserService from "../../services/user";
 import TweetService, { CreateTweetPayload } from "../../services/tweet";
 

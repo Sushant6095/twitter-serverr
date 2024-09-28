@@ -1,3 +1,4 @@
-export const muatations = `#graphql
-    createTweet(payload: CreateTweetData!): Tweet
+export const queries = `#graphql
+    getAllTweets: [Tweet]
+    getSignedURLForTweet(imageName: String!, imageType: String!): String
 `;

@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.queries = void 0;
-exports.queries = `#graphql
-    getAllTweets: [Tweet]
-    getSignedURLForTweet(imageName: String!, imageType: String!): String
-`;
+exports.Tweet = void 0;
+const types_1 = require("./types");
+const queries_1 = require("./queries");
+const mutations_1 = require("./mutations");
+const resolvers_1 = require("./resolvers");
+exports.Tweet = { types: types_1.types, muatations: mutations_1.muatations, resolvers: resolvers_1.resolvers, queries: queries_1.queries };
